@@ -92,10 +92,4 @@ public class MyStepdefs {
         Thread.sleep(500);
         baseTest.basket();
     }
-
-    @And("clicks on add to basket")
-    public void clicksOnAddToBasket() {
-        baseTest = new BaseTest();
-        baseTest.clickAddToBasket();
-    }
 }

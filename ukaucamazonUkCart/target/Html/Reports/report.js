@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/varsha.pervaram/ukaucamazonUkCart/src/test/resources/featureFiles/EighthGiftAdded.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/varsha.pervaram/ukaucamazonUkCart/src/test/resources/featureFiles/SearchedLaptopInBasket.feature");
 formatter.feature({
   "comments": [
     {
@@ -11,13 +11,13 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Amazon UK Application displaying eighth gift idea added to Basket",
+  "name": "Amazon UK Application displays item one searched added to basket",
   "description": "",
-  "id": "amazon-uk-application-displaying-eighth-gift-idea-added-to-basket",
+  "id": "amazon-uk-application-displays-item-one-searched-added-to-basket",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 12186998700,
+  "duration": 27269572900,
   "status": "passed"
 });
 formatter.scenario({
@@ -32,9 +32,9 @@ formatter.scenario({
     }
   ],
   "line": 7,
-  "name": "Basket for amazon uk application shows eighth gift idea",
+  "name": "Item one searched added to basket for amazon uk application",
   "description": "",
-  "id": "amazon-uk-application-displaying-eighth-gift-idea-added-to-basket;basket-for-amazon-uk-application-shows-eighth-gift-idea",
+  "id": "amazon-uk-application-displays-item-one-searched-added-to-basket;item-one-searched-added-to-basket-for-amazon-uk-application",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -45,31 +45,26 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "navigates to Gift Ideas tab",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "user lands on Gift Ideas screen",
+  "name": "user enters laptop as item in search field",
   "keyword": "When "
 });
 formatter.step({
+  "line": 10,
+  "name": "clicks on add to basket",
+  "keyword": "And "
+});
+formatter.step({
   "line": 11,
-  "name": "select the eighth item",
+  "name": "user adds item from sidepane",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "adds eighth gift idea to basket",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "validate gift idea added in basket",
+  "name": "validate laptop added in basket",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "exit the browser",
   "keyword": "And "
 });
@@ -77,49 +72,42 @@ formatter.match({
   "location": "MyStepdefSearch.amazonukApplicationIsLaunchedSuccessfully()"
 });
 formatter.result({
-  "duration": 854514600,
+  "duration": 815358400,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefGiftIdea.navigatesToGiftIdeasTab()"
+  "location": "MyStepdefSearch.userEntersLaptopAsItemInSearchField()"
 });
 formatter.result({
-  "duration": 2399254300,
+  "duration": 26022378200,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefGiftIdea.userLandsOnGiftIdeasScreen()"
+  "location": "MyStepdefSearch.clicksOnAddToBasket()"
 });
 formatter.result({
-  "duration": 1199193300,
+  "duration": 740722799,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefGiftIdea.selectTheEighthItem()"
+  "location": "MyStepdefSearch.userAddsItemFromSidepane()"
 });
 formatter.result({
-  "duration": 6183709300,
+  "duration": 2408029401,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefGiftIdea.addsEighthGiftIdeaToBasket()"
+  "location": "MyStepdefSearch.validateLaptopAddedInBasket()"
 });
 formatter.result({
-  "duration": 3317281000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepdefGiftIdea.validateGiftIdeaAddedInBasket()"
-});
-formatter.result({
-  "duration": 1596474000,
+  "duration": 2517362299,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.exitTheBrowser()"
 });
 formatter.result({
-  "duration": 1590019900,
+  "duration": 1555180600,
   "status": "passed"
 });
 });

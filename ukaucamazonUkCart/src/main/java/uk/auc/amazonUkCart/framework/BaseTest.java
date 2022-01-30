@@ -63,17 +63,16 @@ public class BaseTest {
         driver.findElement(By.xpath("//*[@class='a-section a-spacing-mini sc-list-body sc-java-remote-feature']")).isDisplayed();
     }
 
-    public void todaysDealItem(){
-        driver.getPageSource().contains("Today's Deals");
-        System.out.println("Adding item from Todays deals");
-        driver.findElement(By.xpath("//*[@class='Grid-module__grid_1-xkdMK87Hfx0wjqVxAGcI']/div[4]")).click();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//div[@id='anonCarousel2']/ol/li[9]/div/span/img")).click();
+    public void buttonAddToBasket(){
+        driver.findElement(By.cssSelector("input#add-to-cart-button")).click();
     }
 
-    public void clickAddToBasket(){
-        System.out.println("User clicks on add to basket button");
-        driver.findElement(By.cssSelector("input#add-to-cart-button")).click();
+    public void itemAddedInBasket(){
+        driver.findElement(By.xpath("//*[@id='attachSiAddCoverage']/span/input")).click();
+    }
+
+    public void basketButton(){
+        driver.findElement(By.xpath("//*[@id='attach-sidesheet-view-cart-button']/span/input")).click();
     }
 
     public void clickNoThanks(){
@@ -104,6 +103,11 @@ public class BaseTest {
     public void firstGameSelected(){
         driver.getPageSource().contains("RESULTS");
         driver.findElement(By.xpath("//*[@id='search']/div/div/div/span[3]/div[2]/div[3]")).click();
+    }
+
+    public void addToBasketOnSide(){
+        //Clicking on Basket button from sidesheet pane
+        driver.findElement(By.xpath("//*[@id='attachSiAddCoverage']/span/input")).click();
     }
 
     public void quitApp(){

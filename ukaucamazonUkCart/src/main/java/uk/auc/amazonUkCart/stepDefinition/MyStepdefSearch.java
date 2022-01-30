@@ -3,6 +3,7 @@ package uk.auc.amazonUkCart.stepDefinition;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import uk.auc.amazonUkCart.framework.BaseTest;
 import uk.auc.amazonUkCart.pages.HomeScreen;
@@ -22,6 +23,12 @@ public class MyStepdefSearch {
     public void userEntersLaptopAsItemInSearchField() {
         baseTest = new BaseTest();
         baseTest.laptopEnteredAsSearchText();
+    }
+
+    @And("clicks on add to basket")
+    public void clicksOnAddToBasket() {
+        baseTest = new BaseTest();
+        baseTest.buttonAddToBasket();
     }
 
     @And("clicks No thanks on sidesheet")
@@ -46,5 +53,17 @@ public class MyStepdefSearch {
     public void selectsTheFirstGameFromSearchResults() {
         baseTest = new BaseTest();
         baseTest.firstGameSelected();
+    }
+
+    @And("user adds item from sidepane")
+    public void userAddsItemFromSidepane() {
+        baseTest = new BaseTest();
+        baseTest.itemAddedInBasket();
+    }
+
+    @Then("validate laptop added in basket")
+    public void validateLaptopAddedInBasket() {
+        baseTest = new BaseTest();
+        baseTest.basketButton();
     }
 }
